@@ -16,7 +16,16 @@ A lightweight web component framework built with MoonBit, providing reactive com
 web_component/
 ├── src/
 │   ├── lib/  # Core framework components
-│   │   ├── component.mbt   # Base component types and traits
+│   │   ├── attributes.mbt
+│   │   ├── button.mbt
+│   │   ├── component.mbt
+│   │   ├── dom.mbt
+│   │   ├── events.mbt
+│   │   ├── lifecycle.mbt
+│   │   ├── registry.mbt
+│   │   ├── state.mbt
+│   │   ├── style.mbt
+│   │   ├── template.mbt
 │   │   └── moon.pkg.json
 │   ├── card.mbt            # Card component implementation
 │   ├── counter.mbt         # Counter component implementation
