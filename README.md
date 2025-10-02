@@ -12,7 +12,18 @@ A lightweight web component framework built with MoonBit, providing reactive com
 
 ## Project Structure
 
-web_component/ ├── src/ │ ├── lib/ # Core framework components │ │ ├── component.mbt # Base component types and traits │ │ └── moon.pkg.json │ ├── card.mbt # Card component implementation │ ├── counter.mbt # Counter component implementation │ ├── text_input.mbt # Text input component implementation │ └── moon.pkg.json └── moon.mod.json
+```text
+web_component/
+├── src/
+│   ├── lib/  # Core framework components
+│   │   ├── component.mbt   # Base component types and traits
+│   │   └── moon.pkg.json
+│   ├── card.mbt            # Card component implementation
+│   ├── counter.mbt         # Counter component implementation
+│   ├── text_input.mbt      # Text input component implementation
+│   └── moon.pkg.json
+└── moon.mod.json
+```
 
 ## Components
 
