@@ -1,7 +1,7 @@
 /// 按钮组件实现示例
 pub struct ButtonComponent {
-  attributes : ComponentAttributes
-  state : ComponentState[ButtonState]
+  attributes : @lib.ComponentAttributes
+  state : @lib.ComponentState[ButtonState]
   mut click_handler : (() -> Unit)?
 }
 
@@ -15,8 +15,8 @@ pub struct ButtonState {
 pub fn ButtonComponent::new() -> ButtonComponent {
   let initial_state = ButtonState::{ disabled: false, loading: false }
   { 
-    attributes: ComponentAttributes::new(),
-    state: ComponentState::new(initial_state),
+    attributes: @lib.ComponentAttributes::new(),
+    state: @lib.ComponentState::new(initial_state),
     click_handler: None
   }
 }
@@ -44,7 +44,7 @@ pub fn ButtonComponent::on_click(self : ButtonComponent, handler : () -> Unit) -
 }
 
 /// 实现 WebComponent trait
-impl WebComponent for ButtonComponent with render(self) {
+impl @lib.WebComponent for ButtonComponent with render(self) {
   let text = match self.attributes.get("text") {
     Some(t) => t
     None => "Click me"
@@ -60,13 +60,13 @@ impl WebComponent for ButtonComponent with render(self) {
     attrs["disabled"] = "disabled"
   }
   
-  wrap_content("button", escape_html(text) + loading_text, attrs)
+  @lib.wrap_content("button", @lib.escape_html(text) + loading_text, attrs)
 }
 
-impl WebComponent for ButtonComponent with connected_callback(self) {
+impl @lib.WebComponent for ButtonComponent with connected_callback(self) {
   println("Button component connected to DOM")
 }
 
-impl WebComponent for ButtonComponent with disconnected_callback(self) {
+impl @lib.WebComponent for ButtonComponent with disconnected_callback(self) {
   println("Button component disconnected from DOM")
 }
