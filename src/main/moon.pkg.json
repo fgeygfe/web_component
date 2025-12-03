@@ -1,5 +1,9 @@
 {
+  "is-main": true,
   "import": [
+    "fgeygfe/rabbit-tea-web-component-template/lib",
+    "fgeygfe/rabbit-tea-web-component-template/types",
+    "fgeygfe/rabbit-tea-web-component-template/update",
     {
       "path": "Yoorkin/rabbit-tea",
       "alias": "tea"
@@ -8,8 +12,7 @@
     {
       "path": "Yoorkin/rabbit-tea/html",
       "alias": "html"
-    },
-    "fgeygfe/rabbit-tea-web-component-template/types"
+    }
   ]
 }
 

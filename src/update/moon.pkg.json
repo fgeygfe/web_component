@@ -5,12 +5,7 @@
       "alias": "tea"
     },
     "Yoorkin/rabbit-tea/cmd",
-    {
-      "path": "Yoorkin/rabbit-tea/html",
-      "alias": "html"
-    },
     "fgeygfe/rabbit-tea-web-component-template/types"
   ]
 }
-
 

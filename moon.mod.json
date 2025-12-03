@@ -1,11 +1,19 @@
 {
-  "name": "fgeygfe/web_component",
+  "name": "fgeygfe/rabbit-tea-web-component-template",
   "version": "0.1.0",
+  "deps": {
+    "Yoorkin/rabbit-tea": "0.10.11"
+  },
   "readme": "README.md",
   "repository": "",
   "license": "Apache-2.0",
-  "keywords": [],
-  "description": "",
+  "keywords": [
+    "web-components",
+    "rabbit-tea",
+    "moonbit",
+    "template"
+  ],
+  "description": "Template project for building Web Components with RabbitTea and MoonBit",
   "source": "src",
-  "backends": ["js"]
+  "preferred-target": "js"
 }
